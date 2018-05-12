@@ -316,9 +316,9 @@ if (isset($_SESSION['valid']))
                 echo '<td>';
                 echo '<form action="" method="post" class="pull-right text-right">';
                 echo '<input class=hidden name="owner" value="'.$_SESSION['useruuid'].'">';
-                echo '<button class="btn btn-success btn-xs" type="submit" name="acceptPartnerRequest" value="'.$profileUuid.'">';
+                echo '<button class="btn btn-success btn-xs" type="submit" name="acceptPartnerRequest" value="'.$profilePartner.'">';
                 echo '<i class="glyphicon glyphicon-ok"></i> Accept</button> ';
-                echo '<button class="btn btn-warning btn-xs" type="submit" name="ignorePartnerRequest" value="'.$profileUuid.'">';
+                echo '<button class="btn btn-warning btn-xs" type="submit" name="ignorePartnerRequest" value="'.$profilePartner.'">';
                 echo '<i class="glyphicon glyphicon-remove"></i> Ignore</button> ';
                 echo '<button class="btn btn-danger btn-xs" type="submit" name="declinePartnerRequest" value="'.$profileUuid.'">';
                 echo '<i class="glyphicon glyphicon-trash"></i> Decline</button> ';
@@ -356,7 +356,7 @@ if (isset($_SESSION['valid']))
                 echo '<td class="text-right">';
                 echo '<form action="" method="post">';
                 echo '<input class=hidden name="owner" value="'.$_SESSION['useruuid'].'">';
-                echo '<button class="btn btn-warning btn-xs" type="submit" name="ignorePartnerRequest" value="'.$profileUuid.'">';
+                echo '<button class="btn btn-warning btn-xs" type="submit" name="ignorePartnerRequest" value="'.$profilePartner.'">';
                 echo '<i class="glyphicon glyphicon-remove"></i> Ignore</button> ';
                 echo '<button class="btn btn-danger btn-xs" type="submit" name="declinePartnerRequest" value="'.$profileUuid.'">';
                 echo '<i class="glyphicon glyphicon-trash"></i> Delete</button>';
@@ -393,7 +393,7 @@ if (isset($_SESSION['valid']))
                 echo '<td class="text-right">';
                 echo '<form action="" method="post">';
                 echo '<input class=hidden name="owner" value="'.$_SESSION['useruuid'].'">';
-                echo '<button class="btn btn-success btn-xs" type="submit" name="acceptPartnerRequest" value="'.$profileUuid.'">';
+                echo '<button class="btn btn-success btn-xs" type="submit" name="acceptPartnerRequest" value="'.$profilePartner.'">';
                 echo '<i class="glyphicon glyphicon-ok"></i> Accept</button> ';
                 echo '<button class="btn btn-danger btn-xs" type="submit" name="declinePartnerRequest" value="'.$profileUuid.'">';
                 echo '<i class="glyphicon glyphicon-trash"></i> Delete</button>';
